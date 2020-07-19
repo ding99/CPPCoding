@@ -1038,5 +1038,8 @@ Mkfile.old
 dkms.conf
 
 #project
-LeetCode/Problems01_10/Debug/
+LeetCode/Problems01_10/Debug/*.log
 Entrance/Starter/Debug/
+
+#additional
+**/[dD]ebug
