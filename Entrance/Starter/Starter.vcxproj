@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Entry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LeetCode\Problems01_10\Problems01_10.vcxproj">
@@ -148,6 +150,9 @@
     <ProjectReference Include="..\..\LeetCode\TwoSum\TwoSum.vcxproj">
       <Project>{0b77ba6a-a623-4993-a1f2-f0b5457fb320}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
