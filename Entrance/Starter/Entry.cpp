@@ -36,6 +36,12 @@ void Page1(Page* page) {
 	strcpy_s(p->method, "VeriList");
 	strcpy_s(p->descrption, "Verify Arrays");
 	page->problems.push_back(*p);
+
+	p = new(std::nothrow)Problem;
+	wcscpy_s(p->library, L"Problems01_10");
+	strcpy_s(p->method, "Round");
+	strcpy_s(p->descrption, "Round");
+	page->problems.push_back(*p);
 }
 
 void Page2(Page* page) {

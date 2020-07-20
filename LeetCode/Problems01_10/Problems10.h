@@ -7,4 +7,5 @@ class Solution {
 public:
 	std::vector<int> twoSum(std::vector<int>&, int);
 	void veriList();
+	void Rd();
 };

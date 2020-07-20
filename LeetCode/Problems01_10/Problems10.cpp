@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <string>
 
 #include "pch.h"
 #include "Problems10.h"
@@ -26,4 +28,10 @@ void Solution::veriList() {
 	for (int i = 0; i < 5; i++)
 		std::cout << nums[i] << " ";
 	std::cout << std::endl;
+}
+
+void Solution::Rd() {
+	std::cout << std::round(0.4) << " " << std::lround(0.4) << " " << std::llround(0.4) << std::endl;
+	std::cout << std::round(0.5) << " " << std::lround(0.5) << " " << std::llround(0.5) << std::endl;
+	std::cout << std::round(0.6) << " " << std::lround(0.6) << " " << std::llround(0.6) << std::endl;
 }

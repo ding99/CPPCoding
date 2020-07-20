@@ -24,3 +24,8 @@ void VeriList() {
 	solution.veriList();
 }
 
+void Round() {
+	Solution solution;
+	solution.Rd();
+}
+
