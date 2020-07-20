@@ -16,3 +16,14 @@ std::vector<int> Solution::twoSum(std::vector<int>& nums, int target) {
 
 	return {0, 0};
 }
+
+void Solution::veriList() {
+	int nums[5] = {7,5,6,12,35};
+	for (const int& n : nums)
+		std::cout << n << " ";
+	std::cout << std::endl;
+
+	for (int i = 0; i < 5; i++)
+		std::cout << nums[i] << " ";
+	std::cout << std::endl;
+}

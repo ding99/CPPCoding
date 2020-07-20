@@ -33,8 +33,8 @@ void Page1(Page* page) {
 
 	p = new(std::nothrow)Problem;
 	wcscpy_s(p->library, L"Problems01_10");
-	strcpy_s(p->method, "add2");
-	strcpy_s(p->descrption, "Substruct");
+	strcpy_s(p->method, "VeriList");
+	strcpy_s(p->descrption, "Verify Arrays");
 	page->problems.push_back(*p);
 }
 

@@ -19,3 +19,8 @@ void TwoSum() {
 	std::cout << results.at(0) << ", " << results.at(1) << std::endl;
 }
 
+void VeriList() {
+	Solution solution;
+	solution.veriList();
+}
+

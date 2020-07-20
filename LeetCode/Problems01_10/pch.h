@@ -22,3 +22,4 @@ IMPORT_DLL void add1();
 IMPORT_DLL void add2();
 
 IMPORT_DLL void TwoSum();
+IMPORT_DLL void VeriList();
