@@ -18,3 +18,5 @@
 #endif
 
 IMPORT_DLL int add(int a, int b);
+IMPORT_DLL void add1();
+IMPORT_DLL void add2();
