@@ -3,7 +3,7 @@
 #include <vector>
 
 struct Problem {
-	WCHAR library[100];
+	wchar_t library[100];
 	char method[100];
 	char descrption[100];
 	char detail[512];

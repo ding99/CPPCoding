@@ -15,6 +15,7 @@ void SetMenu(Menu* menu) {
 	Page* page = new(std::nothrow)Page;
 	Page1(page);
 	menu->pages.push_back(*page);
+
 	page = new(std::nothrow)Page;
 	Page2(page);
 	menu->pages.push_back(*page);
@@ -25,14 +26,12 @@ void Page1(Page* page) {
 	Problem* p;
 
 	p = new(std::nothrow)Problem;
-	//memset(&p, 0, sizeof(Problem));
 	wcscpy_s(p->library,L"Problems01_10");
-	strcpy_s(p->method, "add1");
-	strcpy_s(p->descrption, "Add");
+	strcpy_s(p->method, "TwoSum");
+	strcpy_s(p->descrption, "Two Sum");
 	page->problems.push_back(*p);
 
 	p = new(std::nothrow)Problem;
-	//memset(&p, 0, sizeof(Problem));
 	wcscpy_s(p->library, L"Problems01_10");
 	strcpy_s(p->method, "add2");
 	strcpy_s(p->descrption, "Substruct");
@@ -45,14 +44,12 @@ void Page2(Page* page) {
 	Problem* p;
 
 	p = new(std::nothrow)Problem;
-	//memset(&p, 0, sizeof(Problem));
 	wcscpy_s(p->library, L"Problems01_10");
 	strcpy_s(p->method, "add1");
 	strcpy_s(p->descrption, "Add");
 	page->problems.push_back(*p);
 
 	p = new(std::nothrow)Problem;
-	//memset(&p, 0, sizeof(Problem));
 	wcscpy_s(p->library, L"Problems01_10");
 	strcpy_s(p->method, "add2");
 	strcpy_s(p->descrption, "Substruct");
