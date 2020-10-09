@@ -1,20 +1,2 @@
-﻿  pch.cpp
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(8,23): warning C4273: 'add': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(20,16): message : see previous definition of 'add'
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(9,13): warning C4273: 'add1': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(21,17): message : see previous definition of 'add1'
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(10,13): warning C4273: 'add2': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(22,17): message : see previous definition of 'add2'
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(12,15): warning C4273: 'TwoSum': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(24,17): message : see previous definition of 'TwoSum'
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(22,17): warning C4273: 'VeriList': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(25,17): message : see previous definition of 'VeriList'
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.cpp(27,14): warning C4273: 'Round': inconsistent dll linkage
-D:\ProG\CPPCoding\LeetCode\Problems01_10\pch.h(26,17): message : see previous definition of 'Round'
-  dllmain.cpp
-  Problems10.cpp
-D:\ProG\CPPCoding\LeetCode\Problems01_10\Problems10.cpp(14,20): warning C4018: '<': signed/unsigned mismatch
-D:\ProG\CPPCoding\LeetCode\Problems01_10\Problems10.cpp(15,25): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-     Creating library D:\ProG\CPPCoding\Debug\Problems01_10.lib and object D:\ProG\CPPCoding\Debug\Problems01_10.exp
+﻿     Creating library D:\ProG\CPPCoding\Debug\Problems01_10.lib and object D:\ProG\CPPCoding\Debug\Problems01_10.exp
   Problems01_10.vcxproj -> D:\ProG\CPPCoding\Debug\Problems01_10.dll
