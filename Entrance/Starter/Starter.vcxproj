@@ -147,9 +147,6 @@
     <ProjectReference Include="..\..\LeetCode\Problems01_10\Problems01_10.vcxproj">
       <Project>{cd98c438-2f09-498f-b02b-f29592bb98a2}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\LeetCode\TwoSum\TwoSum.vcxproj">
-      <Project>{0b77ba6a-a623-4993-a1f2-f0b5457fb320}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entry.h" />
