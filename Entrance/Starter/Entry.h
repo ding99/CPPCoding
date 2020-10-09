@@ -14,9 +14,14 @@ struct Page {
 	std::vector<Problem> problems;
 };
 
-struct Menu {
+struct Platform {
 	char title[100];
 	std::vector<Page> pages;
+};
+
+struct Menu {
+	char title[100];
+	std::vector<Platform> forms;
 };
 
 void SetMenu(Menu*);
