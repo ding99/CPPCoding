@@ -111,6 +111,7 @@ void EulerP01(Page* page) {
 
 void StartForm(Platform*);
 void StartPage(Page*);
+HANDLE cons = GetStdHandle(STD_OUTPUT_HANDLE);
 
 void Start(Menu* menu) {
 	int i;
@@ -137,6 +138,7 @@ void Start(Menu* menu) {
 }
 
 void StartForm(Platform* form) {
+	SetConsoleTextAttribute(cons, FOREGROUND_RED);
 	int i;
 
 	while (true) {
@@ -149,8 +151,10 @@ void StartForm(Platform* form) {
 		while (true) {
 			std::cin >> i;
 
-			if (i == form->pages.size() + 1)
+			if (i == form->pages.size() + 1) {
+				SetConsoleTextAttribute(cons, FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 				return;
+			}
 
 			if (i >= 1 && i <= form->pages.size()) {
 				StartPage(&form->pages.at(i - 1));
@@ -161,6 +165,7 @@ void StartForm(Platform* form) {
 }
 
 void StartPage(Page* page) {
+	SetConsoleTextAttribute(cons, FOREGROUND_GREEN);
 	int i;
 
 	while (true) {
@@ -173,15 +178,19 @@ void StartPage(Page* page) {
 		while (true) {
 			std::cin >> i;
 
-			if (i == page->problems.size() + 1)
+			if (i == page->problems.size() + 1) {
+				SetConsoleTextAttribute(cons, FOREGROUND_RED);
 				return;
+			}
 
 			if (i >= 1 && i <= page->problems.size()) {
 				HINSTANCE hDllInst;
 				hDllInst = LoadLibrary(page->problems.at(i - 1).library);
 				typedef void(*PLUSFUNC)();
 				PLUSFUNC run = (PLUSFUNC)GetProcAddress(hDllInst, page->problems.at(i - 1).method);
+				SetConsoleTextAttribute(cons, FOREGROUND_GREEN | FOREGROUND_BLUE);
 				run();
+				SetConsoleTextAttribute(cons, FOREGROUND_GREEN);
 				break;
 			}
 		}
