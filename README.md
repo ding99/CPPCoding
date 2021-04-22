@@ -1,2 +1,2 @@
-# CPPCoding
+# CPPSkills
  C++ Coding Challenge
